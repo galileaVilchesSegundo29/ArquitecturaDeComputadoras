@@ -1,0 +1,14 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY xnor00 IS
+    PORT(
+        Anx, Bnx: IN STD_LOGIC;
+        Ynx: OUT STD_LOGIC);
+END xnor00;
+
+ARCHITECTURE A_xnor00 of xnor00 IS
+BEGIN
+    Ynx <= Anx XNOR Bnx;
+END A_xnor00;
